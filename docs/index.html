@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Status</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- ✅ Load Nasalization font -->
+  <style>
+    @font-face {
+      font-family: 'Nasalization';
+      src: url('./fonnts.com-nasalization-rg.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      font-family: 'Nasalization', sans-serif;
+    }
+  </style>
+</head>
+<body class="text-white">
+
+  <!-- ✅ NAVBAR -->
+  <div class="fixed top-0 left-0 h-fit w-full bg-black/40 md:bg-transparent text-secondary border-b-4 border-cyan-300 z-50 backdrop-blur-md">
+    <div class="flex flex-col xl:flex-row xl:item-center justify-between p-2">
+      <a class="max-w-48" href="/">
+        <img alt="logo-gyanotsav" loading="lazy" width="6192" height="2043" decoding="async" 
+             class="lg:h-[50px] h-[40px] w-fit lg:mt-2 my-2 md:pl-6"
+             src="https://www.gyanotsav.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-gyanotsav.42deba74.png&w=3840&q=75">
+      </a>
+      <section class="xl:flex hidden gap-6 text-left items-center">
+        <a class="text-center bg-pink-500 px-4 py-2 items-center my-4 border border-white text-white hover:scale-95 hover:bg-black duration-200 ease-in-out" href="/alumni">Alumni Meet 2024</a>
+      </section>
+    </div>
+  </div>
+
+  <!-- ✅ BACKGROUND GIF -->
+  <img alt="bg-image" 
+       class="object-cover h-screen w-full fixed top-0 left-0 z-[-1] opacity-100"
+       src="https://www.gyanotsav.com/_next/static/media/8.52b00fca.gif" />
+
+  <!-- ✅ PAYMENT STATUS CONTENT -->
+  <div class="min-h-screen pt-32 w-full h-full flex flex-col justify-center items-center text-white">
+    <div class="mx-4 max-w-4xl py-10 px-10 h-min mt-10 md:mt-4 my-24 sm:my-10 md:my-14 lg:my-20 
+                shadow-lg backdrop-blur-3xl bg-black/80 border border-gray-500 rounded-xl">
+      <div class="h-min">
+        <h3 class="md:text-2xl text-base font-semibold text-center">Payment Status</h3>
+        <br>
+        <div class="my-2 text-left">
+          Your payment has been successfully completed!<br>
+          The details of your transaction are as follows:
+          <div class="text-left mt-2 space-y-1">
+            <div>Name - <span class="font-bold text-white">Anshuman Sahu</span></div>
+            <div>Email - <span class="font-bold text-white">sahuanshuman909@gmail.com</span></div>
+            <div>Contact - <span class="font-bold text-white">8989512732</span></div>
+            <div>Event - <span class="font-bold text-white">Dholida 3.0 General Entry</span></div>
+            <div>Amount Paid - <span class="font-bold text-white">₹250</span></div>
+            <div>Issued To - <span class="font-bold text-white">Anshuman Sahu</span></div>
+            <div>Enrollment No. - <span class="font-bold text-white">R2400328470156</span></div>
+            <div>Branch - <span class="font-bold text-white">CSE</span></div>
+            <div>College - <span class="font-bold text-white">GGCE</span></div>
+            <div>The payment was made on <span class="font-bold text-white">Wed Sep 24 2025 17:22:38</span></div>
+          </div>
+          <p class="mt-4 text-gray-300">We appreciate your participation and look forward to seeing you at the event!</p>
+        </div>
+
+        <!-- ✅ Buttons -->
+        <div class="px-10 flex flex-col justify-center items-center mt-10 w-full">
+          <div class="flex flex-col md:flex-row gap-x-6 sm:gap-x-10 md:gap-x-16 gap-y-5 justify-center items-center">
+            <a download="E-PASS-GYANOTSAV-2025-Anshuman-sahu.pdf" 
+               class="items-center justify-center px-4 py-3 font-medium bg-white text-black duration-500 hover:scale-105 transition-all rounded" 
+               role="button" 
+               href="#">
+               Download E-Pass
+            </a>
+            <button class="items-center justify-center px-4 py-3 font-medium bg-white text-black duration-500 hover:scale-105 transition-all rounded" role="button">
+              Send Via Mail
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ FOOTER -->
+  <div class="w-full h-full block">
+    <footer>
+      <div class="bg-white/10 backdrop-blur-3xl p-2 lg:py-4">
+        <div class="md:flex md:items-center justify-around">
+          <a href="https://gyanotsav.com" class="flex items-center mb-2 md:mb-0 space-x-3 relative aspect-auto lg:h-20 md:h-16 sm:h-12 h-10">
+            <img alt="Gyanotsav Logo" loading="lazy" width="300" height="300" decoding="async"
+                 class="object-contain w-[150px] lg:w-[250px]"
+                 src="https://www.gyanotsav.com/_next/image?url=%2Flogo-gyanotsav.png&w=640&q=75">
+          </a>
+          <ul class="items-center mb-3 text-sm font-medium text-gray-300 md:mb-0">
+            <li><a href="/contact-us" class="hover:underline">Contact Us</a></li>
+            <li class="flex md:gap-1 flex-col md:flex-row">
+              <p>For payments/pass issues, contact at</p>
+              <a href="mailto:support@gyanotsav.com" class="underline hover:text-pink-500 text-secondary">support@gyanotsav.com</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="my-6 border-gray-400 lg:my-2">
+        <span class="block text-sm text-gray-300 md:text-center">
+          © 2024 <a href="https://gyanotsav.com" class="hover:underline">Gyanotsav</a>. All Rights Reserved.
+        </span>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
